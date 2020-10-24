@@ -64,5 +64,6 @@ for (var i = 0; i < confirmPasswordLength; i++) {
 return randomNumber;
 
 }
+
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
