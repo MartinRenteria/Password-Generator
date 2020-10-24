@@ -24,5 +24,15 @@ function generatePassword() {
     }
 
 }
+
+}
+
+// Determining how many conditions you would like your password to have
+
+var confirmIncludeLowercase = confirm("Click ok to confirm including lowercase letter");
+var confirmIncludeUppercase = confirm("Click ok to confirm including uppercase letters");
+var confirmIncludeSymbols = confirm("Click ok to confirm including special chracters");
+var confirmIncludeNumbers = confirm("Click ok to confirm including numbers");
+
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
