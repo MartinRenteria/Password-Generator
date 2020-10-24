@@ -15,6 +15,8 @@ function writePassword() {
 
   passwordText.value = password;
 
+}
+
   //Prompt that appears when you click generate button 
 function generatePassword() {
     var confirmPasswordLength = (prompt("How many characters would you like your password to contain?"));
@@ -23,10 +25,6 @@ function generatePassword() {
       return;
     }
 
-}
-
-}
-
 // Determining how many conditions you would like your password to have
 
 var confirmIncludeLowercase = confirm("Click ok to confirm including lowercase letter");
@@ -34,5 +32,37 @@ var confirmIncludeUppercase = confirm("Click ok to confirm including uppercase l
 var confirmIncludeSymbols = confirm("Click ok to confirm including special chracters");
 var confirmIncludeNumbers = confirm("Click ok to confirm including numbers");
 
+//Adding parameters to the password
+var randomNumber = ""
+var passwordParameters = [] 
+
+if (confirmIncludeLowercase) {
+  passwordParameters = passwordParameters.concat(includeLowercase)
+} 
+
+if (confirmIncludeUppercase) {
+  passwordParameters = passwordParameters.concat(includeUppercase)
+} 
+
+if (confirmIncludeSymbols) {
+  passwordParameters = passwordParameters.concat(includeSymbols)
+} 
+
+if (confirmIncludeNumbers) {
+  passwordParameters = passwordParameters.concat(includeNumbers)
+} 
+
+if (confirmIncludeLowercase === false && confirmIncludeUppercase === false && confirmIncludeSymbols === false && confirmIncludeNumbers === false){
+  alert("You must pick an option for password diversity.");
+  return randomNumber;
+}
+
+for (var i = 0; i < confirmPasswordLength; i++) {
+  randomNumber = randomNumber + passwordParameters[Math.floor(Math.random() * passwordParameters.length)];
+
+}
+return randomNumber;
+
+}
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
