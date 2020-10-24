@@ -32,45 +32,33 @@ var confirmIncludeUppercase = confirm("Click ok to confirm including uppercase l
 var confirmIncludeSymbols = confirm("Click ok to confirm including special chracters");
 var confirmIncludeNumbers = confirm("Click ok to confirm including numbers");
 
-//Adding parameters to the password
+//Adding parameters to the password and ensuring password has each of every criteria
 var randomNumber = ""
 var passwordParameters = [] 
 
 if (confirmIncludeLowercase) {
-  passwordParameters = passwordParameters.concat(includeLowercase)
+  passwordParameters = passwordParameters.concat(includeLowercase);
 } 
 
 if (confirmIncludeUppercase) {
-  passwordParameters = passwordParameters.concat(includeUppercase)
+  passwordParameters = passwordParameters.concat(includeUppercase);
 } 
 
 if (confirmIncludeSymbols) {
-  passwordParameters = passwordParameters.concat(includeSymbols)
+  passwordParameters = passwordParameters.concat(includeSymbols);
 } 
 
 if (confirmIncludeNumbers) {
-  passwordParameters = passwordParameters.concat(includeNumbers)
+  passwordParameters = passwordParameters.concat(includeNumbers);
 } 
 
-// Adding each criteria into password container length
-if (confirmIncludeLowercase) {
-    passwordParameters.push(includeLowercase);
-  }
-  if (confirmIncludeUppercase) {
-    passwordParameters.push(includeUppercase);
-  }
-  if (confirmIncludeSymbols) {
-    passwordParameters.push(includeSymbols);
-  }
-  if (confirmIncludeNumbers) {
-    passwordParameters.push(includeNumbers);
-  }
-
+//If user declines to put any criteria into password generator 
 if (confirmIncludeLowercase === false && confirmIncludeUppercase === false && confirmIncludeSymbols === false && confirmIncludeNumbers === false){
-  alert("You must pick an option for password diversity.");
-  return randomNumber;
-}
+    alert("You must pick an option to generate password.");
+    return randomNumber;
+  }
 
+//Randomizes generator pick from each array to put in password length
 for (var i = 0; i < confirmPasswordLength; i++) {
   randomNumber = randomNumber + passwordParameters[Math.floor(Math.random() * passwordParameters.length)];
 
