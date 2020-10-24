@@ -52,6 +52,20 @@ if (confirmIncludeNumbers) {
   passwordParameters = passwordParameters.concat(includeNumbers)
 } 
 
+// Adding each criteria into password container length
+if (confirmIncludeLowercase) {
+    passwordParameters.push(includeLowercase);
+  }
+  if (confirmIncludeUppercase) {
+    passwordParameters.push(includeUppercase);
+  }
+  if (confirmIncludeSymbols) {
+    passwordParameters.push(includeSymbols);
+  }
+  if (confirmIncludeNumbers) {
+    passwordParameters.push(includeNumbers);
+  }
+
 if (confirmIncludeLowercase === false && confirmIncludeUppercase === false && confirmIncludeSymbols === false && confirmIncludeNumbers === false){
   alert("You must pick an option for password diversity.");
   return randomNumber;
