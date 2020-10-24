@@ -15,6 +15,14 @@ function writePassword() {
 
   passwordText.value = password;
 
+  //Prompt that appears when you click generate button 
+function generatePassword() {
+    var confirmPasswordLength = (prompt("How many characters would you like your password to contain?"));
+    if (confirmPasswordLength <= 7 || confirmPasswordLength >= 129) {
+      alert("Your password must have between 8 and 128 characters");
+      return;
+    }
+
 }
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);

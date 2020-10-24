@@ -30,4 +30,4 @@ THEN the password is either displayed in an alert or written to the page
 
 Repository link: https://github.com/MartinRenteria/UWCB-HW03-Password-Generator
 
-Deployment link: 
+Deployment link: https://martinrenteria.github.io/UWCB-HW03-Password-Generator/
