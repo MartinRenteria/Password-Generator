@@ -1,4 +1,4 @@
-# UWCB-HW03-Password-Generator
+# Password-Generator
 
 # Description
 
