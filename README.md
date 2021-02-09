@@ -1,56 +1,39 @@
 # UWCB-HW03-Password-Generator
 
-<strong>Task</strong> 
-<br>
-The goal of the assignment is to meet the specified criteria in order to ensure a strong password generator. This would be for the purpose of ensuring that the company I would be working for would be provided a password generator that greaterly increases security.
+# Description
 
-<strong>User-Story</strong>
-<br>
-AS AN employee with access to sensitive data
-<br>
-I WANT to randomly generate a password that meets certain criteria
-<br>
-SO THAT I can create a strong password that provides greater security
+This application required the knowledge of javascript and performing a set of functions to randomize 4 sets of characters for a high security password with the addition of asking for a user's input.
 
-<strong>Acceptance-Criteria</strong>
-GIVEN I need a new, secure password
-<br>
-WHEN I click the button to generate a password
-<br>
-THEN I am presented with a series of prompts for password criteria
-<br>
-WHEN prompted for password criteria
-<br>
-THEN I select which criteria to include in the password
-<br>
-WHEN prompted for the length of the password
-<br>
-THEN I choose a length of at least 8 characters and no more than 128 characters
-<br>
-WHEN prompted for character types to include in the password
-<br>
-THEN I choose lowercase, uppercase, numeric, and/or special characters
-<br>
-WHEN I answer each prompt
-<br>
-THEN my input should be validated and at least one character type should be selected
-<br>
-WHEN all prompts are answered
-<br>
-THEN a password is generated that matches the selected criteria
-<br>
-WHEN the password is generated
-<br>
-THEN the password is either displayed in an alert or written to the page
-<br>
+## Table of Contents
 
-Screenshots:
+* [License](#license)
+* [Contributing](#contributing)
+* [Screenshot](#screenshot)
+* [Link](#link)
+* [Questions](#questions)
 
+## License
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
+MIT
 
-<strong>Links</strong>
+## Contributing
 
-Repository link: https://github.com/MartinRenteria/UWCB-HW03-Password-Generator
+I am the sole contributor on this project.
 
-Deployment link: https://martinrenteria.github.io/UWCB-HW03-Password-Generator/
+# Screenshot
+Here is a mock of the Weather App.
+
+![Weather_App](Develop/assets/img/Password-Generator.png)
+
+# Link
+Take a look at the live version [here.](https://martinrenteria.github.io/UWCB-HW03-Password-Generator/)
+
+## Questions
+
+If you have any questions, please contact me with the information below.
+
+[GitHub: MartinRenteria](https://github.com/MartinRenteria)
+
+Email: renteriamp96@gmail.com
